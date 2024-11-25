@@ -29,7 +29,7 @@ export class Lexer {
         );
         if (token) this.tokens.push(token);
 
-        colunaAtual += caractere.length + 1; // Ajusta a coluna com base no caractere e espaços.
+        colunaAtual += caractere.length + 1;
       }
 
       linhaAtual++;

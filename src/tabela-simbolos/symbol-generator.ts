@@ -50,7 +50,6 @@ export class SymbolGenerator {
       }
       return;
     }
-    // Palavras reservadas (não adicionadas à tabela de símbolos)
     const palavrasReservadas = [
       "public",
       "static",
@@ -64,7 +63,6 @@ export class SymbolGenerator {
       return;
     }
 
-    // Classes (primeira letra maiúscula)
     if (/^[A-Z]/.test(caractere) && /^[a-zA-Z_]\w*$/.test(caractere)) {
       this.tabelaDeSimbolos.adicionarSimbolo(
         caractere,
@@ -74,7 +72,6 @@ export class SymbolGenerator {
       return;
     }
 
-    // Funções (seguidas por parênteses)
     if (/^[a-zA-Z_]\w*$/.test(caractere) && contexto[index + 1] === "(") {
       this.tabelaDeSimbolos.adicionarSimbolo(
         caractere,
@@ -84,7 +81,6 @@ export class SymbolGenerator {
       return;
     }
 
-    // Variáveis (não reservadas, nem seguidas por parênteses)
     if (/^[a-zA-Z_]\w*$/.test(caractere)) {
       this.tabelaDeSimbolos.adicionarSimbolo(
         caractere,
