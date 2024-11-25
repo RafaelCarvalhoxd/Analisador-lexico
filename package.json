@@ -1,0 +1,16 @@
+{
+  "name": "analisador-lexico",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tsc && node dist/src/main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^22.9.3",
+    "@types/typescript": "^2.0.0",
+    "typescript": "^5.7.2"
+  }
+}

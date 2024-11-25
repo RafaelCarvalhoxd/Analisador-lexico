@@ -1,0 +1,7 @@
+export enum SymbolEnum {
+  VARIAVEL = "VARIAVEL",
+  FUNCAO = "FUNCAO",
+  CLASSE = "CLASSE",
+  PARAMETRO = "PARAMETRO",
+  INDEFINIDO = "INDEFINIDO",
+}
